@@ -29,6 +29,11 @@ p72 下図参考
 p15
 「pulpTestAll」の脚注に「PuLP 2.0 では、pulpTestAllは使用不可となっている。」を追加。
 
+p59
+df.pivot('時限', '曜日')
+↓
+df.pivot(index='時限', columns='曜日')
+
 p124 6行目
 「g.node[nwl+i]['demand'] = dem-1」 → 「g.nodes[nwl + i]['demand'] = dem - 1」
 
@@ -47,3 +52,4 @@ p160
     import datetime
     start = datetime.datetime(2020, 1, 1)
     end = datetime.datetime(2020, 1, 14)
+
